@@ -16,17 +16,31 @@ Return [3,2,1].
 ###### Solution:::::::>>>                   USING C                <<<<<<<<<<<<<:::::::
 
 `#include<stdio.h>
+
 int main()
+
 {
-  int i,n,a[1000];
-  scanf("%d",&n);
-  for(i=n-1;i>=0;i--) // Here taking the values in reverse orders.
-  {
-   scanf("%d",&a[i]);
-  }
-  for(i=0;i<n;i++) // printing the values in the same order as the value were taken in reverse order.
-  {
-   printf("%d",a[i]);
-  }
-  return 0;
+
+int i,n,a[1000];
+
+scanf("%d",&n);
+
+for(i=n-1;i>=0;i--) // Here taking the values in reverse orders.
+
+{
+
+scanf("%d",&a[i]);
+
+}
+
+for(i=0;i<n;i++) // printing the values in the same order as the value were taken in reverse order.
+
+{
+
+printf("%d",a[i]);
+
+}
+
+return 0;
+
 }`
