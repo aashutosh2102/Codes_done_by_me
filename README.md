@@ -16,6 +16,7 @@ Return [3,2,1].
 ###### Solution:::::::>>>                   USING C                <<<<<<<<<<<<<:::::::
 
 `#include<stdio.h>
+
 int main()
 {
     int i,n,a[1000];
