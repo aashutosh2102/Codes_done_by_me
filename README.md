@@ -15,7 +15,7 @@ Return [3,2,1].
 
 ###### Solution:::::::>>>                   USING C                <<<<<<<<<<<<<:::::::
 
-''#include<stdio.h>
+```#include<stdio.h>
 int main()
 {
     int i,n,a[1000];
@@ -29,4 +29,4 @@ int main()
         printf("%d ",a[i]);   //here, in "%d " space is provided as according to the question
     }                      
     return 0;
-}''
+}```
