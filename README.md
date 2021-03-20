@@ -63,6 +63,8 @@ The highest hourglass sum is 28 from the hourglass beginning at row 1, column 2:
   1
 8 6 6
 
+###### Solution:::::::>>>                   USING C                <<<<<<<<<<<<<:::::::
+
 ```
    #include<stdio.h>
    int main()
