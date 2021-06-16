@@ -115,13 +115,13 @@ The input consists of five lines, each line contains five integers: the j-th int
 
 ### Solution:
 Python
-
+Here we are taking the values in the list then appending it in another then using double loop we are solving the required criteria asked.
 ```
 mat = [list(map(int,input().split())) for i in range(5)]
 for i in range(5):
     for j in range(5):
         if mat[i][j]==1:
-            aa=(abs(i-3)+abs(j-3))
+            aa=(abs(i-3+1)+abs(j-3+1))
             
 print(aa)
 ```
