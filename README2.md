@@ -255,3 +255,63 @@ Enter the values of a and b
 12 11
 Swapped values are 11 and 12
 ```
+
+- Write a C program to check two numbers are equal or not using ternary operator.
+```
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    printf("Enter the values\n");
+    scanf("%d %d",&a,&b);
+    printf("%d %d\n",a,b);
+    a==b?printf("Equal"):printf("Not Equal");
+	return 0;
+}
+```
+- - Output
+```
+Enter the values
+10000 10001
+Not Equal
+```
+
+- Write a C program to check if a number is positive or negative.
+```
+#include <stdio.h>
+
+int main() {
+    int a;
+    printf("Enter the value of a\n");
+    scanf("%d",&a);
+    printf("%d\n",a);
+    a>0?printf("Positive"):printf("Negative");
+	return 0;
+}
+```
+- - Output
+```
+Enter the value of a
+-11
+Negative
+```
+
+- Write a C program to check if the given number is even or odd.
+```
+#include <stdio.h>
+
+int main() {
+    int a;
+    printf("Enter the value of a\n");
+    scanf("%d",&a);
+    printf("%d\n",a);
+    a%2==0?printf("Even"):printf("Odd");
+	return 0;
+}
+```
+- - Output
+```
+Enter the value of a
+135972
+Even
+```
