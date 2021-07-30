@@ -119,3 +119,27 @@ Enter the coordinates as x1, x2, y1, y2
 10 20 30 40
 Distance is 14.142136
 ```
+
+- Write a C program to calculate roots of a quadratic equations(For real roots)
+###### Root(r1,r2) values as (+-b + sqrt(b*b-4ac))/2a
+```
+#include <stdio.h>
+#include<math.h>
+int main() {
+	float a,b,c,r1,r2;
+	printf("Enter the values of a,b,c");
+	scanf("%f %f %f",&a,&b,&c);
+	int aa=a,bb=b,cc=c;
+	printf("\n%d %d %d",aa,bb,cc);
+	r1=(-b+sqrt(pow(b,2)-4*a*c))/2*a;
+	r2=(-b-sqrt(pow(b,2)-4*a*c))/2*a;
+	printf("\nRoots are as %f and %f",r1,r2);
+	return 0;
+}
+```
+- - Output
+```
+Enter the values of a,b,c
+1 2 1
+Roots are as -1.000000 and -1.000000
+```
