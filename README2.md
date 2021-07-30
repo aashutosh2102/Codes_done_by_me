@@ -143,3 +143,75 @@ Enter the values of a,b,c
 1 2 1
 Roots are as -1.000000 and -1.000000
 ```
+
+- Write a C program to calculate semi-perimeter and Area of Triangle only using the sides values.
+###### Apply Heron's Formula
+```
+#include <stdio.h>
+#include<math.h>
+int main() {
+    float a,b,c,S,Area;
+    printf("Enter the values of a,b,c");
+    scanf("%f %f %f",&a,&b,&c);
+    S=(a+b+c)/2;
+    Area=sqrt(S*(S-a)*(S-b)*(S-c));
+    int aa=a,bb=b,cc=c;
+    printf("\n%d %d %d\n",aa,bb,cc);
+    printf("Semi-Perimeter = %0.2f\nArea = %0.2f",S,Area);
+	return 0;
+}
+```
+- - Output
+```
+Enter the values of a,b,c
+10 11 20
+Semi-Perimeter = 20.50
+Area = 31.98
+```
+
+- Write a C program to find out the total shopping amount of a person if he gets 50% discount on the total amount.(Run-time)
+```
+#include <stdio.h>
+#include<math.h>
+int main() {
+    float Total_value,Discounted_value;
+    printf("Enter the total value of shopping\n");
+    scanf("%f",&Total_value);
+    Discounted_value=Total_value/2;
+    int tt=Total_value;
+    printf("%d",tt);
+    printf("\nDiscounted_value = %0.3f",Discounted_value);
+	return 0;
+}
+```
+- - Output
+```
+Enter the total value of shopping
+10000
+Discounted_value = 5000.000
+```
+
+- Write a C program to input marks obtained by a student in 5 subjects. Calculate the average marks and percentage obtained by the student.
+```
+#include <stdio.h>
+
+int main() {
+    float E,H,M,S,St,Av,P;
+    printf("Enter the marks obtained in E,H,M,S,St in serial order.\n");
+	scanf("%f %f %f %f %f",&E,&H,&M,&S,&St);
+	Av=(E+H+M+S+St)/5;
+	P=(E+H+M+S+St)/5;
+	int e=E,h=H,m=M,s=S,sT=St;
+	printf("%d %d %d %d %d",e,h,m,s,sT);
+	printf("\nAverage marks = %f",Av);
+	printf("\nPercentage obtained is %f",P);
+	return 0;
+}
+```
+- - Output
+```
+Enter the marks obtained in E,H,M,S,St in serial order.
+89 92 100 100 75
+Average marks = 91.199997
+Percentage obtained is 91.199997
+```
