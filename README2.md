@@ -502,3 +502,31 @@ Enter the 3 digit number
 Armstrong
 ```
 
+- Write a C program to show only the 2nd number of a 5 digit number.
+```
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int n,a,b,c;
+    printf("Enter the 5 digit number\n");
+    scanf("%d",&n);
+    printf("%d\n",n);
+    a=n%1000;
+    n=n/1000;
+    b=n%1000;
+    c=b%10;
+    printf("The 2nd position number in the 5 digit number is %d",c);
+    return 0;
+}
+```
+- - Output
+```
+Enter the 5 digit number
+12345
+The 2nd position number in the 5 digit number is 2
+```
+
+- Write a C program to check if the first and last digit of a 5 digit number are equal then add 7 to the number else keep the number unchanged.
+```
+
+```
