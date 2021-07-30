@@ -469,3 +469,35 @@ Enter the number
 1221
 Palindrome
 ```
+
+- Write a C program  to check if a 3 digit number is Armstrong or not.
+```
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int n,a=0,b=0,c=0,s=0,t;
+    printf("Enter the 3 digit number\n");
+    scanf("%d",&n);
+    printf("%d\n",n);
+    t=n;
+    a=n%10;
+    n=n/10;
+    b=n%10;
+    n=n/10;
+    c=n%10;
+    s=(pow(a,3)+pow(b,3)+pow(c,3));
+    if(s==t){
+        printf("Armstrong\n");
+    }
+    else{
+        printf("Not Armstrong\n");
+    }
+    return 0;
+}
+```
+- - Output
+```
+Enter the 3 digit number
+153
+Armstrong
+```
