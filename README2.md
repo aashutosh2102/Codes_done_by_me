@@ -215,3 +215,36 @@ Enter the marks obtained in E,H,M,S,St in serial order.
 Average marks = 91.199997
 Percentage obtained is 91.199997
 ```
+
+- Write a C program to swap values of 2 variables (i) using 3rd variable, (ii) without using 3rd variable.
+###### using 3rd variable
+```
+#include <stdio.h>
+
+int main() {
+    int a,b,c;
+    printf("Enter the values of a and b\n");
+    scanf("%d %d",&a,&b);
+    printf("%d %d\n",a,b);
+    c=a;
+    a=b;
+    b=c;
+    printf("Swapped values are %d and %d",a,b);
+	return 0;
+}
+```
+##### without using 3rd variable
+```
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    printf("Enter the values of a and b\n");
+    scanf("%d %d",&a,&b);
+    printf("%d %d\n",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("Swapped values are %d and %d",a,b);
+    return 0;
+}
