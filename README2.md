@@ -315,3 +315,157 @@ Enter the value of a
 135972
 Even
 ```
+
+- Write a C program to get the greatest number among 3 numbers using ternary operator.
+```
+#include <stdio.h>
+
+int main() {
+    int a,b,c,max,max1;
+    printf("Enter the value of a, b, c\n");
+    scanf("%d %d %d",&a,&b,&c);
+    printf("%d %d %d\n",a,b,c);
+    max=a>b?a:b;
+    max1=max>c?max:c;
+    printf("Greatest among the three is %d",max1);
+	return 0;
+}
+```
+- - Output
+```
+Enter the value of a, b, c
+13 72 59
+Greatest among the three is 72
+```
+
+- Write a C program to check if a given year is a leap year or not.
+```
+#include <stdio.h>
+
+int main() {
+    int year;
+    printf("Enter the year\n");
+    scanf("%d",&year);
+    printf("%d\n",year);
+    int y=year;
+    (y%4==0 && y%100!=0)?printf("Leap Year"):(y%400==0)?printf("Leap Year"):printf("Not a Leap year");
+    return 0;
+}
+```
+- - Output
+```
+Enter the year
+2012
+Leap Year
+```
+
+- Write a C program to print the grades obtaind by a student.
+```
+#include <stdio.h>
+
+int main() {
+    float P;
+    printf("Enter the percentage obtained.\n");
+    scanf("%f",&P);
+    int p=P;
+    printf("%d\n",p);
+    if(P>=90 && P<100){
+            printf("Grade A\n");
+    }
+    else if(P>=80 && P<=90){
+	    printf("Grade B\n");
+    }
+    else if(P>=70 && P<=80){
+            printf("Grade C\n");
+    }
+    else if(P>=60 && P<=70){
+            printf("Grade D\n");
+    }
+    else{
+            printf("Fail");
+    }
+    return 0;
+}
+```
+- - Output
+```
+Enter the percentage obtained.
+92
+Grade A
+```
+
+- Write a C program to perform arthimatic calculations on 2 operators using switch.
+```
+#include <stdio.h>
+
+int main() {
+    int n,x,y,V;
+    printf("Enter the values of x and y\n");
+    scanf("%d %d",&x,&y);
+    printf("Enter your choice:\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Reminder\n5. Division\n");
+    scanf("%d",&n);
+    printf("%d\n",n);
+    switch(n)
+    {
+        case 1 : V=x+y;
+                 break;
+        case 2 : V=x-y;
+                 break;
+        case 3 : V=x*y;
+                 break;
+        case 4 : V=x%y;
+                 break;
+        case 5 : V=x/y;
+                 break;
+        default: printf("No Choice Exits\n");
+    }
+    printf("Value is %d",V);
+    return 0;
+}
+```
+- - Output
+```
+Enter the values of x and y
+Enter your choice:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Reminder
+5. Division
+1
+Value is 5
+```
+
+- Write a C program to check a 4 digit number is palindrome or not.
+```
+#include <stdio.h>
+
+int main() {
+    int n,a,b,c,rev,t,d;
+    printf("Enter the number\n");
+    scanf("%d",&n);
+    printf("%d\n",n);
+    t=n;
+    a=n%10;
+    n=n/10;
+    b=n%10;
+    n=n/10;
+    c=n%10;
+    n=n/10;
+    d=n%10;
+    rev=a*1000+b*100+c*10+d*1;
+    if(rev==t){
+        printf("Palindrome\n");
+    }
+    else{
+        printf("Not Palindrome\n");
+    }
+    return 0;
+}
+```
+- - Output
+```
+Enter the number
+1221
+Palindrome
+```
