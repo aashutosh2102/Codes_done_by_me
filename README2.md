@@ -70,3 +70,24 @@ Enter the values of radius
 5
 75.000000
 ```
+
+- Write a C program to calculate SI and CI.
+```
+#include <stdio.h>
+#include<math.h>
+int main() {
+	float SI,P,R,T,CI;
+	printf("Enter the values of P, R, T\n");
+	scanf("%f %f %f",&P,&R,&T);
+	SI=(P*R*T)/100;
+	CI=(P*pow(1+R/100,T)-P);
+	printf("Si is %f\nAnd, CI is %f",SI,CI);
+	return 0;
+}
+```
+- - Output
+```
+Enter the values of P, R, T
+Si is 60.000000
+And, CI is 61.207939
+```
