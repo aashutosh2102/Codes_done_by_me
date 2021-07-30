@@ -248,3 +248,10 @@ int main() {
     printf("Swapped values are %d and %d",a,b);
     return 0;
 }
+```
+- - Output
+```
+Enter the values of a and b
+12 11
+Swapped values are 11 and 12
+```
